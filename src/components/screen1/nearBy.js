@@ -11,7 +11,7 @@ class NearByStores extends React.Component{
     }
 
 getRequest=async ()=>{
-  const response=await axios.get("http://127.0.0.1:5000/allData")
+  const response=await axios.get("https://foodapp69.herokuapp.com/allData")
      this.setState({rests:response.data});
 }
 
