@@ -17,7 +17,7 @@ class Menu extends React.Component{
 componentDidMount=()=>{
   var url=window.location.pathname.slice(6);
    console.log(url);
-   axios.get("http://127.0.0.1:5000/menu/"+url)
+   axios.get("https://foodapp69.herokuapp.com/menu/"+url)
   .then((response)=>{
            //console.log(response.data);
            var obj=response.data;
