@@ -18,7 +18,7 @@ setName =(event)=>{
 
 func=()=>{
   console.log("mein bhi aae");
-  axios.post('http://127.0.0.1:5000/restSearch',{name:this.state.name})
+  axios.post('https://foodapp69.herokuapp.com/restSearch',{name:this.state.name})
    .then((response)=>{
            console.log(response.data);
            this.setState({rests:response.data});
