@@ -9,7 +9,7 @@ class Home extends React.Component{
   render(){
      return(
      <>
-       <Container maxWidth='xs' maxWidth="lg">
+       <Container  maxWidth="lg">
          <Locate/>
          <Animate/>
           <hr/>

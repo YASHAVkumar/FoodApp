@@ -12,7 +12,10 @@ import AdbIcon from '@material-ui/icons/Adb';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 
+
 function App(){
+
+   const [value,setValue]=React.useState(0);
    return (
     <div className="App">
        <Router>
@@ -23,7 +26,7 @@ function App(){
                <Route exact path="/restSearch" component={Restaurant}/>
            </Switch>
 
-       <BottomNavigation showLabels color="primary" style={{width:"100%", bottom: 0,position:"fixed",opacity:"0.8"}}>
+       <BottomNavigation showLabel="true" value={value} onChange={(event,newValue)=>{setValue(newValue)}}  color="primary" style={{width:"100%", bottom: 0,position:"fixed",opacity:"0.8"}}>
            <Link to="#">
                 <BottomNavigationAction   label="Scan QR" icon={<CropFreeIcon />} />
            </Link>
@@ -33,11 +36,11 @@ function App(){
            </Link>
 
            <Link to="#">
-                 <BottomNavigationAction label="My Cart" icon={<ShoppingCartIcon />} />
+                 <BottomNavigationAction label="Cart" icon={<ShoppingCartIcon />} />
            </Link>
 
            <Link to="#">
-                 <BottomNavigationAction label="My Profile" icon={<AdbIcon/>} />
+                 <BottomNavigationAction label="Profile" icon={<AdbIcon/>} />
            </Link>
        </BottomNavigation>
 
