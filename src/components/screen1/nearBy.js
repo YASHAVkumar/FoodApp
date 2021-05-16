@@ -1,6 +1,5 @@
 import React from 'react';
-import {Typography,Box,Button,Grid,Card,CardContent,Divider,Container} from '@material-ui/core';
-import randomColor from 'randomcolor';
+import {Typography,Button,Grid,Container} from '@material-ui/core';
 import axios from 'axios';
 import Restaurants from '../rest';
 
@@ -26,11 +25,10 @@ componentDidMount=()=>{
      let allrest=this.state.rests.map((b,index) =>{
       if(index<2)
        return (
-        <Grid item xs={6} >
-         <Restaurants  key={index} name={b.restName} desc={b.Desc} image={b.Image} id={b._id}/>
+        <Grid item xs={6} key={index}>
+         <Restaurants   name={b.restName} desc={b.Desc} image={b.Image} id={b._id}/>
         </Grid>
        )
-
      });
 
      return (

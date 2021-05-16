@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button,Container,Typography} from '@material-ui/core';
-import  '@material-ui/icons';
+import {Container,Typography} from '@material-ui/core';
 
 
 class UserInfo extends React.Component{

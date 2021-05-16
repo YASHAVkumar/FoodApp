@@ -1,7 +1,6 @@
 import React from 'react';
-import randomColor from 'randomcolor';
-import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom';
-import {Card,Grid,CardHeader,CardContent,Typography,Divider,CardMedia} from '@material-ui/core';
+import {Link} from 'react-router-dom';
+import {Card,CardContent,Typography,Divider,CardMedia} from '@material-ui/core';
 
 class Restaurants extends React.Component
 {

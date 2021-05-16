@@ -3,13 +3,11 @@ import {Typography,Box,Button,Grid,Card,CardContent} from '@material-ui/core';
 import randomColor from 'randomcolor';
 
 class TopRated extends React.Component{
-   constructor(props){
-      super(props);
-    }
+
 
    render(){
       return(
-         <Box component="h1" mt={5}>
+         <Box mt={5}>
                       <Typography variant="h5">Top Rated</Typography>
                      <Button color="primary" style={{float:"right"}}>View All</Button>
 

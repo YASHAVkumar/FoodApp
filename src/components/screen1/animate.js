@@ -2,10 +2,6 @@ import React from 'react';
 
 
 class Animate extends React.Component{
-   constructor(props){
-      super(props);
-    }
-
    render(){
      const images=[
         "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -17,7 +13,7 @@ class Animate extends React.Component{
         }
       return(
               <>
-                  <img src={images[0]} style={styles.media}/>
+                  <img src={images[0]} style={styles.media} alt="main img"/>
               </>
 
       );

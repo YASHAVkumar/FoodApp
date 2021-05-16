@@ -1,8 +1,8 @@
 import React from 'react';
-import {Button,Container,Typography} from '@material-ui/core';
+import {Container,Typography} from '@material-ui/core';
 import  '@material-ui/icons';
 import axios from 'axios';
-import RestroDetails from '../components/screen2/userInfo';
+
 import  ItemSearch from '../components/screen2/search';
 import  Items from '../components/screen2/mainContent';
 import  Locate from '../components/screen1/locate';
@@ -30,14 +30,14 @@ render(){
 
   let allItems=this.state.items.map((x,y)=>{
       return (
-         <>
+         <div key={y}>
           <Items key={x._id} name={x.itemName} image={x.itemImage} price={x.itemPrice}  discount={x.isOnDiscount}/>
-         </>
+         </div>
       )
    })
 
      return(
-          <Container maxWidth="xs" maxWidth="lg">
+          <Container  maxWidth="lg">
                 <Locate/>
                 <ItemSearch />
              <div>

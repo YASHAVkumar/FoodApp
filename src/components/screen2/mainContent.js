@@ -1,11 +1,8 @@
 import React from 'react';
-import {Card,Grid,CardHeader,CardContent,Typography,Divider,CardMedia} from '@material-ui/core';
+import {Card,CardContent,Typography,Divider,CardMedia} from '@material-ui/core';
 
 
 class MainContent extends React.Component{
-   constructor(props){
-      super(props);
-    }
 
    render(){
          const styles={

@@ -1,11 +1,8 @@
 import React from 'react';
-import {FormControl,Button,Input,Container} from '@material-ui/core';
-import {Link} from 'react-router-dom';
+import {Container} from '@material-ui/core';
+
 
 class Search extends React.Component{
-   constructor(props){
-      super(props);
-    }
 
    render(){
       return(

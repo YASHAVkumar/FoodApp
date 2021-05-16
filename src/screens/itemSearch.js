@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button,Input,Container,Typography} from '@material-ui/core';
+import {Typography} from '@material-ui/core';
 import Locate from '../components/screen1/locate';
 import axios from 'axios';
 import  Items from '../components/screen2/mainContent';
@@ -38,7 +38,7 @@ class Searchby extends React.Component{
       <>
           <Locate/>
              <div style={{marginTop:"40px"}}>
-               {this.state.items.length==0?<Typography variant="h2" style={{marginTop:"50%"}}>No item found!!</Typography>:allItems}
+               {this.state.items.length===0?<Typography variant="h2" style={{marginTop:"50%"}}>No item found!!</Typography>:allItems}
               </div>
       </>
       )

@@ -1,6 +1,6 @@
 import React from 'react';
-import {FormControl,Button,Input,Container,Grid,Typography} from '@material-ui/core';
-import {Link} from 'react-router-dom';
+import {Container,Typography} from '@material-ui/core';
+
 import Locate from '../components/screen1/locate';
 import Restaurants from '../components/rest'
 import axios from 'axios';
@@ -38,9 +38,9 @@ func=()=>{
 
       <>
       <Locate/>
-      <Container maxWidth="xs" maxWidth="lg" style={{background:"lightgray",marginTop:"50px",height:"180px"}}>
+      <Container  maxWidth="lg" style={{background:"lightgray",marginTop:"50px",height:"180px"}}>
       {
-       allrest.length==0?
+       allrest.length===0?
           <div>
             <Typography variant="h4">Enter Restaurant Name</Typography>
            <input type="text" placeholder="Enter Restaurant Name" name="item" onChange={this.setName.bind(this)}/>
